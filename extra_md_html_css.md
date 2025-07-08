@@ -1,19 +1,31 @@
 _____________________
 
-# .md
+<center>
+<h3>
+<span style="color: #8bb174;"> Markdown</spna>
 
-# Título maior, principal
-## Título
-### Título
-#### Título menor
+</h3>
+</center>
+
+# Título maior, principal #
+## Título ##
+### Título ###
+#### Título menor ####
 
 <span style="color: #168aad;"> span style="color: #168aad;", dentro do < > muda cor</spna>
 
 ' &nbsp ;' pula linha e dá espaço 
-
+<br>
+<br>
 _____________________
 
-<h1>HTML</h1>
+<center>
+<h3>
+<span style="color: #8bb174;"> HTML</spna>
+</h3>
+</center>
+
+<h1> h1</h1>
 
 <h2> h2 </h2>
 
@@ -41,6 +53,19 @@ abrirá uma "pag web"
 
     protocolo - conjunto de regras 
 
+<br>
+
+- <u>Hyper Text</u>
+
+    - antigamente tinha apenas texto puro, como livros, jornais
+    -com o tempo chegou a versão web que trouxe links (hyper texto), texto que levava a outro lugares
+    - Agora temos imagens, vídeos, áudios
+
+<br>    
+
+- <u>Markup</u>
+
+    - marcações:
 <br>
 
 - <b>URL</b> - <i>Uniform Resource Locator</i> / Localizador de Recurso uniforme
@@ -134,3 +159,88 @@ google lê o alt
 < section> sessão
 
 observar identação e aberturas
+
+Seletor é quando chama a tag para fazer algo com ela
+
+ex
+< style>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h2 {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: red;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+< /style>
+
+-<b>Importar a pag css no html</b>
+
+Apenas teclar link e enter
+
+< head>
+    < meta charset="UTF-8">
+    < meta name="viewport" content="width=device-width, initial-scale=1.0">
+    < title>Título</title>
+
+    // importar css
+    < link rel="stylesheet" href="index.html">
+    
+< /head>
+
+pegar o nome - botão direito no file:css - por ./ antes do nome
+
+ou só link enter - ir no file - copy relative path - por ./ na frente do nome
+
+- <b>rel</b> relacionamento da tag link - que é stylesheet (estilo de pag)
+
+<br>
+<br>
+_____________________
+
+<center>
+<h3>
+<span style="color: #8bb174;"> CSS </spna>
+</h3>
+</center>
+
+<br>
+- <b>CSS</b><i>Cascating Style Sheet</i> / Folha em estilo de cascata
+
+- casacatas são regras das escritas
+
+O arquivo terá em sua sintaxe, declarações, propriedades e valores
+
+Irá impactar o html
+
+- aqui se chama apenas a tag
+
+h2 {
+    corpo
+}
+
+- <b>Declaraçao</b>
+- <b>Regras da Escrita</b>
+- <b>Hierarquia</b> de baixo prevalece, savo de especificar
+- <b>Especifidade</b> ex .title = seleciona a classe title ou h2.title (tudo junto)
+<br>
+body{
+    background-image: url("./assets/pexels-earano.jpg");
+}
+
+por uma ou mais imagens
+
+url() = função do css
+
+body{
+    background-image: url("./assets/pexels-zvolskiy.jpg");
+    /*pega imagem*/
+    background-repeat: no-repeat;
+    /*keyword - para não repetir imagem*/
+    background-size:; 100% auto;
+    /*width height - altura*/
+    /*automaticamente o tamanho da imagem é 100% da largura da pag */
+    background-position: top center;
+    /*vertical -y horizontal - x*/
+    background-color: #121214;
+    /*hex: repete rr, gg, bb*/
+    /*pega imagem*/ff é máximo 00 é menos
+    /*matriz = hue = posição das cores - de 0° a 360°
+    saturação = saturation = pureza e vivacidade - 0 a 100%
+    iluminosidade = lightness = brilho - 0% preto e 100% branco*/
+}
