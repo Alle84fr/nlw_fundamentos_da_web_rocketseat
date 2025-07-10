@@ -189,6 +189,35 @@ ou só link enter - ir no file - copy relative path - por ./ na frente do nome
 
 - <b>rel</b> relacionamento da tag link - que é stylesheet (estilo de pag)
 
+fonts google
+
+fonte Inter (pequei Roboto Mono)
+
+seleciona a que quer
+
+get font
+
+get ended code
+
+web
+
+link
+
+o link é 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+copiar todo
+
+index.html
+
+<head>
+
+colar antes do <meta charset="UTF-8">
+
 <br>
 <br>
 _____________________
@@ -215,12 +244,18 @@ h2 {
 }
 
 - <b>Declaraçao</b>
+
 - <b>Regras da Escrita</b>
+
 - <b>Hierarquia</b> de baixo prevalece, savo de especificar
+
 - <b>Especifidade</b> ex .title = seleciona a classe title ou h2.title (tudo junto)
 <br>
+
 body{
-    background-image: url("./assets/pexels-earano.jpg");
+
+    background-image: url("./assets/pexels-earano.jpg")
+    ;
 }
 
 por uma ou mais imagens
@@ -228,19 +263,57 @@ por uma ou mais imagens
 url() = função do css
 
 body{
+
     background-image: url("./assets/pexels-zvolskiy.jpg");
+
     /*pega imagem*/
+
     background-repeat: no-repeat;
+
     /*keyword - para não repetir imagem*/
+
     background-size:; 100% auto;
+
     /*width height - altura*/
+
     /*automaticamente o tamanho da imagem é 100% da largura da pag */
+
     background-position: top center;
+
     /*vertical -y horizontal - x*/
+
     background-color: #121214;
+
     /*hex: repete rr, gg, bb*/
+
     /*pega imagem*/ff é máximo 00 é menos
+
     /*matriz = hue = posição das cores - de 0° a 360°
+
     saturação = saturation = pureza e vivacidade - 0 a 100%
+
     iluminosidade = lightness = brilho - 0% preto e 100% branco*/
+}
+
+o * significa que está pegando tudo do body
+
+/*Copiei e colei code da própria pag da fonte, parte css*/
+
+body * {
+
+  font-family: "Tektur", sans-serif;
+  /* tipo da fonte*/
+
+  font-optical-sizing: auto;
+  /**/
+
+  font-weight: weight;
+  /**/
+
+  font-style: normal;
+  /**/
+
+  font-variation-settings:
+    "wdth" 100;
+    /**/
 }

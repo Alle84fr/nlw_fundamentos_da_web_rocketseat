@@ -1,0 +1,37 @@
+todas tags são caixas
+
+header, h2, imagens, parágrafo, section, main, body,etc etc.. são caixas
+
+todas caixas tem :
+
+- padding - espaço externo
+
+- bordas - border
+
+- espaço interno - conter
+
+- conteúdo - content
+
+- largura - widht
+
+- altura - height
+
+se quiser ver as caixas, no css por 
+
+ * {
+    border: 1px solid red;
+}
+
+mostrará todas as bordas de todas as caixas do body
+
+por padrão vem com um espaço entrele eles, para tirar por margin: 0
+
+box-sizing: border-box; - sempre que tiver contetúdo + preenchimento a largura é ambos, vai de borda a borda
+
+px, menor unidade
+ex: 1920x1080
+1920 quadros de largura
+
+ren = 16pix por padrão
+
+2x
